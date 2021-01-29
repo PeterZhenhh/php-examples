@@ -10,6 +10,6 @@ RUN apt-get install -y git
 
 RUN composer install --no-interaction
 
-EXPOSE 80
+EXPOSE 443
 
-ENTRYPOINT ["php", "-S", "0.0.0.0:80"]
+ENTRYPOINT ["php", "-S", "0.0.0.0:443"]
